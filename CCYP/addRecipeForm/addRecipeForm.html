@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Author: Katherine Skipper		Date: 11/4/2019-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Add Recipe Form</title>
+		<link rel="stylesheet" href="../stylesheet/generalSite.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<h2>Kooky Cooks<br/><em>An empty plate merely peaks into a world of possibility</em></h2>
+			<!--The "<em></em>" tags refer to italicizing text.-->
+		</div>
+		<h1>Add Recipe Form</h1>
+		<div class="form">
+			<form>
+				<fieldset>
+					<!--parts of recipe to be entered go here-->
+					<!--Submit button has 2 actions: submits info into DB and takes user back to home page-->
+					<label>Recipe Name</label>
+					<input type="text"
+							id="name"
+							value="Recipe Name"/>
+					<br/><br/><label>Tag</label>
+					<input type="text"
+							id="tag"
+							value="Tag"/>&emsp;&emsp;Examples: ex, ex, ex, ex
+					<br/><br/><p style="text-align:left;">Ingredients</p>
+					<textarea id="ingred"
+							rows=25
+							cols=70></textarea>
+					<br/><br/><p style="text-align:left;">Directions</p>
+					<textarea id="direct"
+							rows=25
+							cols=70></textarea>
+					<!--Add second button action: to add it into DB-->
+					<br/><br/><button type="submit" formaction="../userHomeView/userHomeView.html">Add Recipe</button>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

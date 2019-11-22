@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--Katie: Author of this website. Date: 9/21/2019 -->
+<!--Katie: Tips for spacing I found: (UPDATE: IGNORE. Haven't gotten bellow to work)
+Type “&nbsp;” to add a single space.
+Type “&ensp;” to add 2 spaces.
+Type “&emsp;” to add 4 spaces. (tab)
+Use the non-breaking space (nbsp) 4 times to insert a tab. (obv, perhaps)
+Use “<br/>” to add a line break.
+Found above here plus other sources for exact formatting:
+https://www.quora.com/How-do-you-add-a-tab-space-in-HTML
+Other sources:
+How to write it out in code: &tag; //writen btwn words where spacing needed
+Found above here: https://www.computerhope.com/issues/ch001662.htm
+//My note: double click link to access it(on windows Notepad++)
+
+Found out how to keep the tabs you use via button
+while typing! (HTML ignores extra spaces inserted while typing on normal
+basis)
+This page has a few useful info about HTML: https://www.computerhope.com/issues/ch001662.htm
+//^^this happens to change/erase all text formatting, though. So until can do something
+//about it, should just ignore it. But it is neat. :)
+
+ -->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!--Katie: a website suggested this was ugly text style, but I beg to differ ;) -->
+		<title>Meal Maker</title>
+		<link rel="stylesheet" href="../stylesheet/generalSite.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<h2>Kooky Cooks<br/><em>An empty plate merely peaks into a world of possibility</em></h2>
+			<!--The "<em></em>" tags refer to italicizing text.-->
+		</div>
+		<h1>Meal Maker</h1>
+		<!--<p><pre class="tab">Testing	said function		out.		Does it? Yeah!</pre></p>-->
+		<p style="float:center;">Simply enter in a category of food and the sides you'd like to consider below to get started.
+		<br/><br/>Need some suggestions? Here's a few main courses:&emsp;&emsp;Mexican | Asian | American | Chinese&emsp;&emsp;&emsp;
+		<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sides:&emsp;&emsp;potatos | fries | green beans | cold pasta salad</p>
+		<p style="text-align:left;">
+		<div>
+			<div class="form">
+				<form>
+					<fieldset>
+						<div style="text-align:center">
+							<label><strong>Main Course:</strong></label>
+							&emsp;<input type="text"
+									id="mainCourse"
+									value="Enter category..."/>
+							<input type="checkbox"
+									name="tags"
+									value="By tag..">
+							<label>By tag..</label>
+							<input type="checkbox"
+									name="ingredient"
+									value="By ingredients">
+							<label>By ingredients..</label>
+							<input type="checkbox"
+									name="category"
+									value="By food category">
+							<label>By food category..</label><br/><br/>
+							<p style="margin-left:450px;text-align:justify;">
+							<label><strong>Number of sides:</strong></label>
+							<br/><input type="checkbox"
+									name="option1"
+									value="3sides">3 sides
+							&emsp;&emsp;<label><strong>Enter choices:</strong></label>
+							<input type="text"
+									id="sides"
+									value="Enter category..."/>
+							<br/><input type="checkbox"
+									name="option1"
+									value="2sides">2 sides
+							&emsp;&emsp;<label><strong>Enter choices:</strong></label>
+							<input type="text"
+									id="sides"
+									value="Enter category..."/>
+							<br/><input type="checkbox"
+									name="option1"
+									value="1side">1 side
+							&emsp;&emsp;<label><strong>Enter choice:</strong></label>
+							<input type="text"
+									id="sides"
+									value="Enter category..."/>
+							<br/><input type="checkbox"
+									name="option1"
+									value="recommend">Let us recommend sides
+							<!--# of textfields depends on number of sides they choose-->		
+						</p>
+							<button type="submit" formaction="../Results/Results.html">Search me!</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!--<p>!--Err..perhaps bellow is a second page that pops up after they hit "search"? --</p>-->
+	</body>
+</html>
