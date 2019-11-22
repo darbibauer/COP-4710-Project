@@ -19,15 +19,15 @@
 					<label>Email</label>
 						<input type="text"
 								id="email"
-								value="Email"/>
+								value="Email"/>&emsp;&emsp;<button>Reset Email<!--This button will send email value to DB to update it--></button>
 				</fieldset>
 				<fieldset>
 					<h3>Password Reset</h3>
-					<label>Password</label>
+					&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<label>Password</label>
 						<input type="password"
 								id="password"
 								value="Password"/>
-					<label>Confirm Password</label>
+					<br/><label>Confirm Password</label>
 						<input type="password"
 								id="password"
 								value="Password"/>
@@ -36,6 +36,37 @@
 				</fieldset>
 				<fieldset>
 					<h3>Access Grocery List</h3>
+					<div class="form">
+						<form>
+							<fieldset>
+								<table>
+									<tr>
+										<label>GroceryItem</label>
+										<input type="text"
+												id="entry"
+												value="GroceryItem"/>
+										<br/><label>GroceryItem</label>
+										<input type="text"
+												id="entry"
+												value="GroceryItem"/>
+										<br/><label>GroceryItem</label>
+										<input type="text"
+												id="entry"
+												value="GroceryItem"/>
+										<br/><label>GroceryItem</label>
+										<input type="text"
+												id="entry"
+												value="GroceryItem"/>
+										<br/><label>GroceryItem</label>
+										<input type="text"
+												id="entry"
+												value="GroceryItem"/>
+									</tr>
+								</table>
+							</fieldset>
+						</form>
+					</div>
+					<button>Add Recipe to Grocery List<!--Calls funct in DB that does this on backend. Calling the ingredients of that specific recipe--></button>
 				</fieldset>
 			</form>
 		</div>
