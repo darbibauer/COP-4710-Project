@@ -1,0 +1,55 @@
+<?PHP
+	include_once'includes/dbh.inc.php';
+?>
+
+<!DOCTYPE html>
+<!--Author: Katherine Skipper		Date: 10/25/2019-->
+<html>
+	<header>
+		<title>Home Page</title>
+		<link rel="stylesheet" href="../stylesheet/index.css"/>
+	</header>
+	<body>
+		<div class="header">
+			<h2>Kooky Cooks&emsp;|&emsp;<em>An empty plate merely peaks into a world of possibility</em></h2>
+		</div>
+		<table style="width:100%">
+			<tr>
+				<h1>Welcome to our page!</h1>
+			</tr>
+			<tr>
+				<td style="width:140px;">
+					<div class="menu">
+						<ul>
+							<li><a href="../Profile/Profile.html">Your Profile</a></li>
+							<li><a href="../addRecipeForm/addRecipeForm.html">Add Recipe</a></li>
+							<li><a href="../Search/Search.html">Search Recipes</a></li>
+							<!--Add action bellow: send status to DB. Log user out.-->
+							<li><a href="../../index.html">Log out</a></li>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<p style="margin-top:0px;">&emsp;&emsp;&emsp;&emsp;We are excited to have you here! We would like to offer you a page where 
+					you can find any recipe that's been uploaded to our database. Here on Kooky Cooks we strive to deliver 
+					a fast, easy way to gather ideas to help plan your next meal. Whether that's a small meal for one, or 
+					a huge party of 50,000 guest. Take a look around our site and start to find ideas to spark your next 
+					food addiction.
+					<br/><br/>&emsp;&emsp;&emsp;&emsp;Ever walk into the kitchen and stare at the food like, "What am I supposed to make with any of this?"
+					We'd like to offer you a website where you can plan your own meals. When you sign up as a member, you get some added features. On the left is a
+					list of features which are available on this website. The features you have access to without signing
+					up are links in which you can use to access them. Those features not made into links are features you
+					could have access to by signing up.
+					<br/><br/>&emsp;&emsp;&emsp;&emsp;Click the <a href="../Profile/Profile.html">Profile</a> link to the left to go to
+					your profile page. On your profile page you can edit your personal information or add a recipe to your grocery list.
+					You can also just click <a href="../addRecipeForm/addRecipeForm.html">Add Recipe</a> to the left to go directly to
+					the Recipe Form. The <a href="../Search/Search.html">Search Recipes</a> link to the left will take you to
+					a search page that will allow you to search for different recipes. We will also pair those dishes with recommended dishes, 
+					in addition to some side dishes you may enter that you would like to pair with the main dish. You can search from a broad 
+					category (like breakfast or Mexican), a specific main dish (tacos), or specific keywords (gluten free, spicey, pasta). 
+					You can <a href="../../index.html">loggout</a> directly from the main site or from within your profile page.</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

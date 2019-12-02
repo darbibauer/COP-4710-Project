@@ -8,66 +8,64 @@
 	</head>
 	<body>
 		<div class="header">
-			<h2>Kooky Cooks<br/><em>An empty plate merely peaks into a world of possibility</em></h2>
+			<h2>Kooky Cooks&emsp;|&emsp;<em>An empty plate merely peaks into a world of possibility</em></h2>
 			<!--The "<em></em>" tags refer to italicizing text.-->
 		</div>
 		<h1>Profile</h1>
 		<div class="form">
 			<form>
+				<CENTER>
+				<fieldset>
+					<button formaction="../../index.html">Sign Out<!--make sure user signed out in DB--></button>
+				</fieldset>
 				<fieldset>
 					<h3>Personal Information</h3>
 					<label>Email</label>
 						<input type="text"
-								id="email"
-								value="Email"/>&emsp;&emsp;<button>Reset Email<!--This button will send email value to DB to update it--></button>
+								id="email"/>&emsp;&emsp;<button>Reset Email<!--This button will send email value to DB to update it--></button>
 				</fieldset>
 				<fieldset>
 					<h3>Password Reset</h3>
 					&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<label>Password</label>
 						<input type="password"
-								id="password"
-								value="Password"/>
+								id="password"/>
 					<br/><label>Confirm Password</label>
 						<input type="password"
-								id="password"
-								value="Password"/>
+								id="password"/>
 						<!--Button action should be updating info in DB-->
 						<br/><br/><button type="submit" formaction="Profile.html">Reset</button>
 				</fieldset>
 				<fieldset>
 					<h3>Access Grocery List</h3>
-					<div class="form">
-						<form>
-							<fieldset>
-								<table>
-									<tr>
-										<label>GroceryItem</label>
-										<input type="text"
-												id="entry"
-												value="GroceryItem"/>
-										<br/><label>GroceryItem</label>
-										<input type="text"
-												id="entry"
-												value="GroceryItem"/>
-										<br/><label>GroceryItem</label>
-										<input type="text"
-												id="entry"
-												value="GroceryItem"/>
-										<br/><label>GroceryItem</label>
-										<input type="text"
-												id="entry"
-												value="GroceryItem"/>
-										<br/><label>GroceryItem</label>
-										<input type="text"
-												id="entry"
-												value="GroceryItem"/>
-									</tr>
-								</table>
-							</fieldset>
-						</form>
-					</div>
-					<button>Add Recipe to Grocery List<!--Calls funct in DB that does this on backend. Calling the ingredients of that specific recipe--></button>
+					<!--load list from DB-->
+					<table>
+						<tr>
+							<label>GroceryItem</label>
+							<input type="text"
+									id="entry"
+									value="GroceryItem"/>
+							<br/><label>GroceryItem</label>
+							<input type="text"
+									id="entry"
+									value="GroceryItem"/>
+							<br/><label>GroceryItem</label>
+							<input type="text"
+									id="entry"
+									value="GroceryItem"/>
+							<br/><label>GroceryItem</label>
+							<input type="text"
+									id="entry"
+									value="GroceryItem"/>
+							<br/><label>GroceryItem</label>
+							<input type="text"
+									id="entry"
+									value="GroceryItem"/>
+						</tr>
+					</table>
+					<br/><button>Add Recipe to Grocery List<!--Calls funct in DB that does this on backend. Calling the ingredients of that specific recipe--></button>
+					<!--When user adds a recipe, new fields will have to be created. Number of fields currently on page must match up to what user has in list-->
 				</fieldset>
+				</CENTER>
 			</form>
 		</div>
 	</body>
